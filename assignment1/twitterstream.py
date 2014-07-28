@@ -3,10 +3,10 @@ import urllib2 as urllib
 
 # See assignment1.html instructions or README for how to get these credentials
 
-api_key = "<Enter api key>"
-api_secret = "<Enter api secret>"
-access_token_key = "<Enter your access token key here>"
-access_token_secret = "<Enter your access token secret here>"
+api_key = "mVbzXQGu4uKzVJxLj5nuU18bA"
+api_secret = "T6ojVhDOFpR8BzTKIzZLigvqP6sOIq9rqagWNlbBDmIWFuk5ZE"
+access_token_key = "629213654-MaWRMJGEraxMNu8F63spfXD7pMc1M9KeHpRtRGDN"
+access_token_secret = "XcTehu9IHu1reQUH1IzXP7RHTyi2H9w4WoPC0MfLoJn8Z"
 
 _debug = 0
 
@@ -51,7 +51,7 @@ def twitterreq(url, method, parameters):
   return response
 
 def fetchsamples():
-  url = "https://stream.twitter.com/1/statuses/sample.json"
+  url = "https://stream.twitter.com/1/statuses/sample.json?q=passthedressing"
   parameters = []
   response = twitterreq(url, "GET", parameters)
   for line in response:
